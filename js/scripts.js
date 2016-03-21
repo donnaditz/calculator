@@ -1,21 +1,8 @@
-var add = function(number1, number2) {
-  return number1 + number2;
+var bMI = function(weight, height) {
+  return weight/(height/100*height/100);
 };
 
-var subtract = function(number1, number2) {
-  return number1 - number2;
-};
+var weight= prompt("please enter your weight.")
+var height= prompt("please enter your height.")
 
-var multiply = function(number1, number2) {
-  return number1 * number2;
-};
-
-var divide = function(number1, number2) {
-  return number1 / number2;
-};
-
-
-var number1 = parseInt(prompt("Enter a number:"));
-var number2 = parseInt(prompt("Enter another number:"));
-var result = subtract(number1, number2);
-alert(result);
+alert(bMI(weight, height));
